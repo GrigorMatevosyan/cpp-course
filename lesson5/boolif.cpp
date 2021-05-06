@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+int main() {
 bool isBadWeather = true;
 bool haveCar = true;
 if (isBadWeather && haveCar){
