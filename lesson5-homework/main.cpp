@@ -59,3 +59,20 @@ sum = firstn + secondn + thirdn + forthn;
 cout << "sum = " << sum << endl;
 return 0;
 }
+
+//Գրեք ծրագիր որում օգտագործողը(user) գրում է պարզ մաթեմատիկական մի գործողություն, օրինակ՝ 5 + 7, կամ 10 –2, կամ 3 * 7, կամ 27 / 3 , այսինքնկարող է օգտագործել4 գործողություն(+,-,*,/) ցանկացած թվի հետ, իսկ դուք 
+//պիտի ըստ մուտքագրված տվյալների հասկանաք գործողության նշանը, եւ կատարեք գործողությունը։(թվի եւ նշանի միջեւկա բացատ)
+ int main(){
+int num1, num2, result;
+char op;
+cin >> num1 >> op >> num2;
+switch (op){
+  case '+' : result = num1 + num2; break;
+  case '-' : result = num1 - num2; break;
+  case '*' : result = num1 * num2; break;
+  case '/' : result = num1 / num2; break;
+  default: cout << "invalid operator" << endl;
+}
+cout << result;
+return 0;
+}
